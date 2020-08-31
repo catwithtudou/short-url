@@ -2,6 +2,7 @@ package logic
 
 import (
 	"context"
+	"shorturl/rpc/model"
 
 	"shorturl/rpc/expand/internal/svc"
 	expand "shorturl/rpc/expand/pb"
@@ -12,17 +13,26 @@ import (
 type ExpandLogic struct {
 	ctx context.Context
 	logx.Logger
+	model *model.ShorturlModel
 }
 
 func NewExpandLogic(ctx context.Context, svcCtx *svc.ServiceContext) *ExpandLogic {
 	return &ExpandLogic{
 		ctx:    ctx,
 		Logger: logx.WithContext(ctx),
+		model:  svcCtx.Model,
 	}
 }
 
 func (l *ExpandLogic) Expand(in *expand.ExpandReq) (*expand.ExpandResp, error) {
-	// todo: add your logic here and delete this line
+	res,err:=l.model.FindOne(in.Key)
+	if err!=nil{
+		return nil,err
+	}
 
-	return &expand.ExpandResp{}, nil
+	return &expand.ExpandResp{
+		Url: res.Url,
+	}, nil
 }
+
+
