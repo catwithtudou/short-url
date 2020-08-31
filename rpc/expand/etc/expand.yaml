@@ -6,3 +6,7 @@ Etcd:
   Hosts:
   - 127.0.0.1:2379
   Key: expand.rpc
+DataSource: root:@tcp(localhost:3306)/demo
+Table: shorturl
+Cache:
+  - Host: localhost:6379
