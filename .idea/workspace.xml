@@ -41,6 +41,30 @@
       <list>
         <RestClientRequest>
           <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8888/expand" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="key" />
+                <option name="value" value="a8e356" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
           <option name="urlBase" value="http://localhost:8888/shorten" />
           <option name="urlPath" value="" />
           <option name="headers">
@@ -114,7 +138,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.shorturl#1">
+  <component name="RunManager" selected="HTTP Request.shorturl#2">
     <configuration name="go build shorturl/api" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="shorturl" />
       <working_directory value="$PROJECT_DIR$" />
@@ -127,8 +151,12 @@
     <configuration name="shorturl#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/shorturl.http" runType="Run single request">
       <method v="2" />
     </configuration>
+    <configuration name="shorturl#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/shorturl.http" index="2" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.shorturl#2" />
         <item itemvalue="HTTP Request.shorturl#1" />
         <item itemvalue="Go Build.go build shorturl/api" />
       </list>
@@ -150,22 +178,22 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1598847258514" />
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1598848233851">
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1598848370797">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1598848233851" />
-    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1598848233851">
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1598848370797" />
+    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1598848370796">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1598848233851" />
-    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1598848233850">
+    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1598848370796" />
+    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1598848370796">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1598848233850" />
-    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1598848233851">
+    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1598848370796" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1598848370796">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1598848233851" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1598848370796" />
     <state x="270" y="62" key="SettingsEditor" timestamp="1598842589423">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
