@@ -1,4 +1,10 @@
-GET http://localhost:8888/shorten?url=http://www.zhengya.cn
+GET http://localhost:80/api/item?id=99
 Accept: application/json
 
 ###
+GET http://localhost:8888/expand?key=a8e356
+Accept: application/json
+
+###
+
+
