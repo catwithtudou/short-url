@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package expand;
+
+message expandReq {
+  string key = 1;
+}
+
+message expandResp {
+  string url = 1;
+}
+
+service expander {
+  rpc expand(expandReq) returns(expandResp);
+}

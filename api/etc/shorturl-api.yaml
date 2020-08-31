@@ -1,0 +1,14 @@
+Name: shorturl-api
+Host: 0.0.0.0
+Port: 8888
+
+Shortener:
+  Etcd:
+    Hosts:
+      - localhost:2379
+    Key: shorten.rpc
+Expander:
+  Etcd:
+    Hosts:
+      - localhost:2379
+    Key: expand.rpc

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package shorten;
+
+message shortenReq {
+    string url = 1;
+}
+
+message shortenResp {
+    string key = 1;
+}
+
+service shortener {
+    rpc shorten(shortenReq) returns(shortenResp);
+}

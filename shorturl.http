@@ -1,0 +1,4 @@
+GET http://localhost:8888/shorten?url=http://www.zhengya.cn
+Accept: application/json
+
+###

@@ -1,0 +1,34 @@
+info(
+	title: short-url
+	desc: short-url
+	author: zhengyu
+	email: 949812478@qq.com
+)
+
+type expandReq struct {
+	key string `form:"key"`
+}
+
+type expandResp struct {
+	url string `json:"url"`
+}
+
+type shortenReq struct {
+	url string `form:"url"`
+}
+
+type shortenResp struct {
+	shortUrl string `json:"shortUrl"`
+}
+
+service shorturl-api {
+	@server(
+		handler: ShortenHandler
+	)
+	get /shorten(shortenReq) returns(shortenResp)
+
+	@server(
+		handler: ExpandHandler
+	)
+	get /expand(expandReq) returns(expandResp)
+}

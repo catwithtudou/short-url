@@ -1,0 +1,21 @@
+GET http://localhost:8888/shorten?url=http://www.zhengya.cn
+Accept: application/json
+
+<> 2020-08-31T112847.200.json
+
+###
+
+GET http://localhost:8888/shorten?url=http://www.xiaoheiban.cn
+Accept: application/json
+
+<> 2020-08-31T112835.200.json
+
+###
+
+GET http://localhost:8888/shorten/url?id=http://www.zhengyua.cn
+Accept: application/json
+
+<> 2020-08-31T112619.404.txt
+
+###
+
